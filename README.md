@@ -8,7 +8,7 @@ The data describes 500,000 Expresso clients.
 The dataset was taken through several techniques starting from checking missing data to the filling of missing values with zero .The target variable was then visualized with the data as well as the square root of both data , to check the distribution of the target variable
 
 ## Features Engineering
-#### Feature engineering was the performed using label Encoder both on the test and train data on the "Region
+Feature engineering was the performed using label Encoder both on the test and train data on the "Region
 
 from sklearn.preprocessing import LabelEncoder
 
@@ -34,24 +34,24 @@ Print(train_box[["TENURE", "TENURE_um"]].head())
 
 ## Model Trainig, Validation and Evaluation
 The Catboostclassifier was used to train the model as the evaulation was based on log loss, Grid search was used to get the best parameter for the model , it gave the following results: 
-##### bestTest = 0.2560194097
-##### bestIteration = 998
-##### Log Loss: 0.256019409719239
-#### The model gave an Accuracy of : 0.8770625
-#### Feature importance visualization was also done on the top 20 features.
+* BestTest = 0.2560194097
+* BestIteration = 998
+* Log Loss: 0.256019409719239
+* The model gave an Accuracy of : 0.8770625
+* Feature importance visualization was also done on the top 20 features.
 
 ## Technologies Used
-#### python
-#### pandas
-#### seaborn
-#### sklearn
-#### catboost
-#### jupyter notebook
+ * python
+ * pandas
+ * seaborn
+ * sklearn
+ * catboost
+ * jupyter notebook
 
 ## Result 
-#### The model performed on a LOG_LOSS score of 0.251802394 on the public leaderboard and 0.247434682 on the private leaderboard
-#### This score placed me 13th on the final leaderboard
-### This is the link to the competition
+* The model performed on a LOG_LOSS score of 0.251802394 on the public leaderboard and 0.247434682 on the private leaderboard
+* This score placed me 13th on the final leaderboard
+  this is the link to the competition
 https://zindi.africa/competitions/microsoft-x-dsn-free-ai-classes-in-every-city-hackathon-expresso-churn-prediction
 
 
