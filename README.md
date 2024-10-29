@@ -13,7 +13,6 @@ Feature engineering was the performed using label Encoder both on the test and t
 from sklearn.preprocessing import LabelEncoder
 
 #### Initialize LabelEncoder
-
 label_encoder = LabelEncoder()
 
 train_box.loc[:,'REGION_label'] = label_encoder.fit_transform(train_box['REGION'].astype(str))
@@ -21,7 +20,6 @@ train_box.loc[:,'REGION_label'] = label_encoder.fit_transform(train_box['REGION'
 test_box.loc[:,'REGION_label'] = label_encoder.fit_transform(test_box['REGION'].astype(str))
 
 #### Also another Feature engineering was done extracting numerical value from strings
-
 def return_mileage(length):
 
     mile = re.search("\d+", length)
